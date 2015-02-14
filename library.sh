@@ -1,4 +1,4 @@
 #/bin/bash
 
-# Used to pull all invidual function files here
+# Used to pull all individual function files here
 source menuFunction.sh
