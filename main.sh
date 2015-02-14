@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source ./library.sh
+source library.sh
 
 printMenu()
