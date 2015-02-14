@@ -4,4 +4,4 @@
 source library.sh
 
 # print menu
-printMenu()
+printMenu
