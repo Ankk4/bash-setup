@@ -2,7 +2,7 @@
 
 # for time being, function files need to be called here to prevent errors
 source updateSystem.sh
-
+source install.sh
 # print the menu 
 printMenu(){
 while :
@@ -27,7 +27,7 @@ do
     # do something for the input
     case $opt in
         1)
-            #call function here
+            installMenu
             ;;
         2)  ;;
         3)
@@ -42,6 +42,39 @@ do
         *)
             read -p "Invalid option. Press any key to continue: " randomKey
             ;;
+    esac
+done
+}
+
+installMenu() {
+while :
+do
+# print menu
+	clear
+   	echo
+   	echo "*************"
+   	echo "Install Programs"
+   	echo "*************"
+   	echo "Choose what to install:"
+   	echo "1. NodeJS and npm"
+   	echo "2. Exit"
+   	echo
+
+    	# ask user input
+    	read -p "Enter your choice: " opt
+	
+	    # do something for the input
+	    case $opt in
+	        1)
+	            installNode
+	            ;;
+	        2)
+	            echo "All done"
+	            break 1
+	            ;;
+	        *)
+	          read -p "Invalid option. Press any key to continue: " randomKey
+	  ;;
     esac
 done
 }
