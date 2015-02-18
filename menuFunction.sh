@@ -20,6 +20,19 @@ do
     read -p "Enter your choice: " opt
 
     # do something for the input
-
+    case $opt in
+        1)
+            #call function here
+             ;;
+        2) ;;
+        3) ;;
+        4)
+            echo "All done"
+            break 1
+            ;;
+        *)
+            read -p "Invalid option. Press any key to continue: " randomKey
+            ;;
+    esac
 done
 }
