@@ -31,7 +31,6 @@ do
             ;;
         2)  ;;
         3)
-            # call a function 
             updateSystem
             ;;
         4)  ;;
