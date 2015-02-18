@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# for time being, function files need to be called here to prevent errors
+source updateSystem.sh
+
+# print the menu 
 printMenu(){
 while :
 do
@@ -12,8 +16,9 @@ do
     echo "Choose what to do:"
     echo "1. Install programs"
     echo "2. Install configs"
-    echo "3. Create filesystem structure"
-    echo "4. Exit"
+    echo "3. Install system updates"
+    echo "4. Create filesystem structure"
+    echo "5. Exit"
     echo
 
     # ask user input
@@ -23,10 +28,14 @@ do
     case $opt in
         1)
             #call function here
-             ;;
-        2) ;;
-        3) ;;
-        4)
+            ;;
+        2)  ;;
+        3)
+            # call a function 
+            updateSystem
+            ;;
+        4)  ;;
+        5)
             echo "All done"
             break 1
             ;;
