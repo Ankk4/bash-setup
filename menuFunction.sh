@@ -67,6 +67,7 @@ do
 	    case $opt in
 	        1)
 	            installNode
+		    read -p "Program installed. Press any key to continue. " randomKey
 	            ;;
 	        2)
 	            echo "All done"
