@@ -51,12 +51,13 @@ do
 # print menu
 	clear
    	echo
-   	echo "*************"
+   	echo "*******************"
    	echo "Install Programs"
-   	echo "*************"
+   	echo "*******************"
    	echo "Choose what to install:"
    	echo "1. NodeJS and npm"
-   	echo "2. Exit"
+	echo "2. Apache"
+   	echo "3. Exit"
    	echo
 
     	# ask user input
@@ -66,14 +67,16 @@ do
 	    case $opt in
 	        1)
 	            installNode
-		    read -p "Program installed. Press any key to continue. " randomKey
 	            ;;
-	        2)
+		2)
+		    installApache
+		    ;;
+	        3)
 	            echo "All done"
 	            break 1
 	            ;;
 	        *)
-	          read -p "Invalid option. Press any key to continue: " randomKey
+	          read -p "Invalid option. Press any key to continue." randomKey
 	  ;;
     esac
 done
