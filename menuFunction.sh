@@ -57,8 +57,9 @@ do
    	echo "Choose what to install:"
    	echo "1. NodeJS and npm"
 	echo "2. Apache"
-   	echo "3. Exit"
-   	echo
+   	echo "3. Mysql-server"
+   	echo "4. Exit"
+	echo 
 
     	# ask user input
     	read -p "Enter your choice: " opt
@@ -71,7 +72,10 @@ do
 		2)
 		    installApache
 		    ;;
-	        3)
+		3)
+		    installMysql
+		    ;;
+	        4)
 	            echo "All done"
 	            break 1
 	            ;;

@@ -29,8 +29,13 @@ installApache(){
 }
 
 installMysql(){
-	sudo apt-get install mysql-server
-	mysql -u root -p
+	type mysql >/dev/null 2>&1
+	if [ $? -eq 0 ]; then
+		read -p "Mysql-server is already installed. Press any key to continue." rk
+	else
+		sudo apt-get install mysql-server
+		mysql -u root -p
+	fi
 }
 
 installMongo(){
