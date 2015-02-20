@@ -17,7 +17,6 @@ do
     echo "1. Install programs"
     echo "2. Install configs"
     echo "3. Install system updates"
-    echo "4. Create filesystem structure"
     echo "5. Exit"
     echo
 
@@ -33,7 +32,6 @@ do
         3)
             updateSystem
             ;;
-        4)  ;;
         5)
             echo "All done"
             break 1
@@ -58,7 +56,8 @@ do
    	echo "1. NodeJS and npm"
 	echo "2. Apache"
    	echo "3. Mysql-server"
-   	echo "4. Exit"
+   	echo "4. Install MongoDB"
+	echo "5. Exit"
 	echo 
 
     	# ask user input
@@ -76,6 +75,9 @@ do
 		    installMysql
 		    ;;
 	        4)
+		    installMongo
+		    ;;
+		5)
 	            echo "All done"
 	            break 1
 	            ;;

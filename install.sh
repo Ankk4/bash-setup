@@ -39,13 +39,17 @@ installMysql(){
 }
 
 installMongo(){
-	sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-	echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.lis
-	sudo apt-get update
-	sudo apt-get install -y mongodb-org
-	sudo service mongod start
-
-	#Onnistuiko oikein
-	#Default port 27017
-	cat /var/log/mongodb/mongod.log
+	type mongo >/deb/null 2>&1
+	if [ $? -eq 0 ]; then
+		read -p "MongoDB is already installed. Press any key to continue." rk
+	else
+		sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+		echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.lis
+		sudo apt-get update
+		sudo apt-get install -y mongodb-org
+		sudo service mongod start
+		#Onnistuiko oikein
+		#Default port 27017
+		cat /var/log/mongodb/mongod.log
+	fi
 }
