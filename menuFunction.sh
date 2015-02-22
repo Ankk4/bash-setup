@@ -17,7 +17,7 @@ do
     echo "1. Install programs"
     echo "2. Install configs"
     echo "3. Install system updates"
-    echo "5. Exit"
+    echo "4. Exit"
     echo
 
     # ask user input
@@ -32,7 +32,7 @@ do
         3)
             updateSystem
             ;;
-        5)
+        4)
             echo "All done"
             break 1
             ;;
