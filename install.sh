@@ -53,3 +53,7 @@ installMongo(){
 		cat /var/log/mongodb/mongod.log
 	fi
 }
+
+installGit(){
+    sudo apt-get install git
+}
