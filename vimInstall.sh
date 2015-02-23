@@ -40,6 +40,3 @@ confVim(){
     echo "export TERM=xterm-256color" >> ~/.bashrc
 }
 
-installAutoPairs
-installSolarized
-confVim
