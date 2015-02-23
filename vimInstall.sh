@@ -40,11 +40,11 @@ confVim(){
     echo "set shiftwidth=4" >> ~/.vimrc
     echo "set softtabstop=0" >> ~/.vimrc
     echo "set expandtab" >> ~/.vimrc
-    #echo "syntax enable" >> ~/.vimrc
-    #echo "set background=dark" >> ~/.vimrc
-    #echo "let g:solarized_termcolors=256" >> ~/.vimrc
-    #echo "colorscheme solarized" >> ~/.vimrc
-    #echo "export TERM=xterm-256color" >> ~/.bashrc
+    echo -e "\" syntax enable" >> ~/.vimrc
+    echo -e "\" set background=dark" >> ~/.vimrc
+    echo -e "\" let g:solarized_termcolors=256" >> ~/.vimrc
+    echo -e "\" colorscheme solarized" >> ~/.vimrc
+    echo -e "\" export TERM=xterm-256color" >> ~/.bashrc
 
     echo
     echo "Vim configured"
