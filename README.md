@@ -3,7 +3,13 @@ Bash program to setup development enviroment  for latest ubuntu.
 
 - Install programs
 - Configure system and program settings
--     vim.rc  and plugins.
--     . bashrc
+  - .vimrc  and plugins.
+  - .bashrc
 - Update and manage
   
+To-do:
+- copy .vimrc, rather than echo the text.
+- Install pathogen (vim)
+- Check unzip
+- .bashrc aliases
+
