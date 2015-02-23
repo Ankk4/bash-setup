@@ -12,4 +12,6 @@ To-do:
 - Install pathogen (vim)
 - Check unzip
 - .bashrc aliases
+- InstallMenu typos
+- Make install.sh consistent
 
