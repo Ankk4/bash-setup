@@ -45,7 +45,7 @@ do
             break 1
             ;;
         *)
-            read -p "Invalid option. Press any key to continue: " randomKey
+            read -p "Invalid option. Press any key to continue. " randomKey
             ;;
     esac
 done
