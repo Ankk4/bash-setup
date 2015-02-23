@@ -17,7 +17,7 @@ do
     echo "1. Install programs"
     echo "2. Install configs"
     echo "3. Install system updates"
-    echo "5. Exit"
+    echo "4. Exit"
     echo
 
     # ask user input
@@ -32,7 +32,7 @@ do
         3)
             updateSystem
             ;;
-        5)
+        4)
             echo "All done"
             break 1
             ;;
@@ -57,7 +57,8 @@ do
 	echo "2. Apache"
    	echo "3. Mysql-server"
    	echo "4. Install MongoDB"
-	echo "5. Exit"
+    echo "5. Install Git"
+	echo "6. Exit"
 	echo 
 
     	# ask user input
@@ -74,10 +75,13 @@ do
 		3)
 		    installMysql
 		    ;;
-	        4)
+	    4)
 		    installMongo
 		    ;;
-		5)
+        5)
+            installGit
+            ;;
+		6)
 	            echo "All done"
 	            break 1
 	            ;;
