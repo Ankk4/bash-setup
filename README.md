@@ -14,4 +14,5 @@ To-do:
 - .bashrc aliases
 - InstallMenu typos
 - Make install.sh consistent
+- Add unzip to installmenu
 
