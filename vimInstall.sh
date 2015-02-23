@@ -9,20 +9,27 @@ installAutoPairs(){
 
     cp auto-pairs-master/plugin/auto-pairs.vim ~/.vim/plugin 
     rm -rf auto-pairs-master
-
+    rm master.zip
+    
+    echo
     echo "Auto-pairs installed"
+    echo
 }
 
 # function to install solazired theme
 installSolarized(){
     mkdir ~/.vim/colors
-    wget ethanschoonover.com/solarized/files/solarized.zip
+    wget http://ethanschoonover.com/solarized/files/solarized.zip
+
     unzip solarized.zip
 
-    cp solazired/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
+    cp solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
     rm -rf solarized
-
+    rm solarized.zip
+    
+    echo
     echo "Solarized installed"
+    echo
 }
 
 # configure vim
@@ -33,10 +40,14 @@ confVim(){
     echo "set shiftwidth=4" >> ~/.vimrc
     echo "set softtabstop=0" >> ~/.vimrc
     echo "set expandtab" >> ~/.vimrc
-    echo "syntax enable" >> ~/.vimrc
-    echo "set background=dark" >> ~/.vimrc
-    echo "let g:solarized_termcolors=256" >> ~/.vimrc
-    echo "colorscheme solarized" >> ~/.vimr
-    echo "export TERM=xterm-256color" >> ~/.bashrc
+    #echo "syntax enable" >> ~/.vimrc
+    #echo "set background=dark" >> ~/.vimrc
+    #echo "let g:solarized_termcolors=256" >> ~/.vimrc
+    #echo "colorscheme solarized" >> ~/.vimrc
+    #echo "export TERM=xterm-256color" >> ~/.bashrc
+
+    echo
+    echo "Vim configured"
+    echo
 }
 
