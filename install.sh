@@ -57,3 +57,7 @@ installMongo(){
 installGit(){
     sudo apt-get install git
 }
+
+installUnzip(){
+    sudo apt-get install unzip
+}
