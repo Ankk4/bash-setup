@@ -34,17 +34,7 @@ installSolarized(){
 
 # configure vim
 confVim(){
-    touch ~/.vimrc
-    echo "set nu" >> ~/.vimrc
-    echo "set tabstop=4" >> ~/.vimrc
-    echo "set shiftwidth=4" >> ~/.vimrc
-    echo "set softtabstop=0" >> ~/.vimrc
-    echo "set expandtab" >> ~/.vimrc
-    echo -e "\" syntax enable" >> ~/.vimrc
-    echo -e "\" set background=dark" >> ~/.vimrc
-    echo -e "\" let g:solarized_termcolors=256" >> ~/.vimrc
-    echo -e "\" colorscheme solarized" >> ~/.vimrc
-    echo -e "\" export TERM=xterm-256color" >> ~/.bashrc
+    cp .vimrc ~/
 
     echo
     echo "Vim configured"
