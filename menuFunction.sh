@@ -3,6 +3,8 @@
 # for time being, function files need to be called here to prevent errors
 source updateSystem.sh
 source install.sh
+source vimInstall.sh
+
 # print the menu 
 printMenu(){
 while :
@@ -17,7 +19,8 @@ do
     echo "1. Install programs"
     echo "2. Install configs"
     echo "3. Install system updates"
-    echo "4. Exit"
+    echo "4. Install and configure Vim"
+    echo "5. Exit"
     echo
 
     # ask user input
@@ -33,11 +36,16 @@ do
             updateSystem
             ;;
         4)
+            installAutoPairs
+            installSolarized
+            confVim
+            ;;
+        5)
             echo "All done"
             break 1
             ;;
         *)
-            read -p "Invalid option. Press any key to continue: " randomKey
+            read -p "Invalid option. Press any key to continue. " randomKey
             ;;
     esac
 done
@@ -69,24 +77,24 @@ do
 	        1)
 	            installNode
 	            ;;
-		2)
-		    installApache
-		    ;;
-		3)
-		    installMysql
-		    ;;
-	    4)
-		    installMongo
-		    ;;
-        5)
-            installGit
-            ;;
-		6)
+		    2)
+		        installApache
+		        ;;
+		    3)
+		        installMysql
+		        ;;
+	        4)
+		        installMongo
+		        ;;
+            5)
+                installGit
+                ;;
+		    6)
 	            echo "All done"
 	            break 1
 	            ;;
 	        *)
-	          read -p "Invalid option. Press any key to continue." randomKey
+	            read -p "Invalid option. Press any key to continue." randomKey
 	  ;;
     esac
 done

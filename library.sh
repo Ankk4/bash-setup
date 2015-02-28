@@ -4,3 +4,4 @@
 source menuFunction.sh
 source updateSystem.sh
 source install.sh
+source vimInstall.sh
