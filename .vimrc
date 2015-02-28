@@ -11,7 +11,7 @@ set expandtab
 set laststatus=2
 
 " for solarized
-""syntax enable
-""set background=dark
-""let g:solarized_termcolors=256
-""colorscheme solarized
+" syntax enable
+" set background=dark
+" let g:solarized_termcolors=256
+" colorscheme solarized
