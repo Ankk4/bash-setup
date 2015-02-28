@@ -66,36 +66,40 @@ do
    	echo "3. Mysql-server"
    	echo "4. Install MongoDB"
     echo "5. Install Git"
-	echo "6. Exit"
+    echo "6. Install Unzip"
+	echo "7. Exit"
 	echo 
 
-    	# ask user input
-    	read -p "Enter your choice: " opt
+    # ask user input
+    read -p "Enter your choice: " opt
 	
-	    # do something for the input
-	    case $opt in
-	        1)
-	            installNode
-	            ;;
-		    2)
-		        installApache
-		        ;;
-		    3)
-		        installMysql
-		        ;;
-	        4)
-		        installMongo
-		        ;;
-            5)
-                installGit
-                ;;
-		    6)
-	            echo "All done"
-	            break 1
-	            ;;
-	        *)
-	            read -p "Invalid option. Press any key to continue." randomKey
-	  ;;
+	# do something for the input
+	case $opt in
+        1)
+            installNode
+            ;;
+        2)
+            installApache
+            ;;
+        3)
+            installMysql
+            ;;
+        4)
+            installMongo
+            ;;
+        5)
+            installGit
+            ;;
+        6)
+            installUnzip
+            ;;
+        7)
+            echo "All done"
+            break 1
+            ;;
+        *)
+            read -p "Invalid option. Press any key to continue." randomKey
+            ;;
     esac
 done
 }
