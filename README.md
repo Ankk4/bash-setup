@@ -9,6 +9,6 @@ Bash program to setup development enviroment  for latest ubuntu.
   
 To-do:
 - Install pathogen (vim) A
-- Check git and unzip installations
+- Improve git and unzip installations (check if installed, confirm installation)
 - .bashrc aliases
 - Make install.sh consistent A
