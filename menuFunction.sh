@@ -38,7 +38,7 @@ do
         4)
             installAutoPairs
             installSolarized
-            #confVim
+            confVim
             ;;
         5)
             echo "All done"
