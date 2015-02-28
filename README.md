@@ -8,11 +8,7 @@ Bash program to setup development enviroment  for latest ubuntu.
 - Update and manage
   
 To-do:
-- copy .vimrc, rather than echo the text. M
 - Install pathogen (vim) A
-- Check unzip
+- Check git and unzip installations
 - .bashrc aliases
-- InstallMenu typos M
 - Make install.sh consistent A
-- Add unzip to installmenu M
-
