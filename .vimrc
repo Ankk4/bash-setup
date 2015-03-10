@@ -6,7 +6,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 set expandtab
-set syntax enable
+syntax enable
 
 " for airline
 set laststatus=2
