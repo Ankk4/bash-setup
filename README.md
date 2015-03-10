@@ -8,6 +8,5 @@ Bash program to setup development enviroment  for latest ubuntu.
 - Update and manage
   
 To-do:
-- .bashrc aliases
+- bashrc aliases
 - Network address manager
-- 
