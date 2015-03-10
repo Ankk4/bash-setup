@@ -7,7 +7,7 @@ installAutoPairs(){
     wget https://github.com/jiangmiao/auto-pairs/archive/master.zip
     unzip master.zip
 
-    cp auto-pairs-master/plugin/auto-pairs.vim ~/.vim/plugin 
+    cp auto-pairs-master/plugin/auto-pairs.vim ~/.vim/bundle/
     rm -rf auto-pairs-master
     rm master.zip
     
@@ -23,7 +23,7 @@ installSolarized(){
 
     unzip solarized.zip
 
-    cp solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
+    cp solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/bundle/
     rm -rf solarized
     rm solarized.zip
     
@@ -43,3 +43,9 @@ confVim(){
     echo
 }
 
+# function to install pathogen
+installPathogen(){
+	mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+	
+}
