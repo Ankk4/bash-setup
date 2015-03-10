@@ -36,6 +36,7 @@ do
             updateSystem
             ;;
         4)
+		installPathogen
             installAutoPairs
             installSolarized
             confVim

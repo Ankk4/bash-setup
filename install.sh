@@ -39,7 +39,7 @@ installMysql(){
 }
 
 installMongo(){
-	type mongo >/deb/null 2>&1
+	type mongo >/dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		read -p "MongoDB is already installed. Press any key to continue." rk
 	else
@@ -55,9 +55,19 @@ installMongo(){
 }
 
 installGit(){
-    sudo apt-get install git
+	type git >/dev/null 2>&1
+	if [ $? -eq 0 ]; then
+		read -p "Git is already installed. Press any key to continue." rk
+	else
+		 sudo apt-get install git
+	fi
 }
 
 installUnzip(){
-    sudo apt-get install unzip
+    	type unzip >/dev/null 2>&1
+	if [ $? -eq 0 ]; then
+		read -p "Unzip is already installed. Press any key to continue." rk
+	else
+		sudo apt-get install unzip
+	fi
 }
