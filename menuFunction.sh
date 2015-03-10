@@ -36,10 +36,11 @@ do
             updateSystem
             ;;
         4)
-		installPathogen
+	    installPathogen
             installAutoPairs
             installSolarized
             confVim
+            read -p "Vim Configured. Press any key to continue. " randomKey
             ;;
         5)
             echo "All done"
