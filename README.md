@@ -6,6 +6,9 @@ Bash program to setup development enviroment  for latest ubuntu.
   - .vimrc  and plugins.
   - .bashrc
 - Update and manage
+ 
+Notes:
+- Library file is deprecated
   
 To-do:
 - bashrc aliases
