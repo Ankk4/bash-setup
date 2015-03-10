@@ -14,3 +14,4 @@ To-do:
 - bashrc aliases
 - Network address manager
 - Virtual machine setup(VMware tools)
+- Why is vim configuration not in "Install configs" - section? :D
