@@ -8,7 +8,5 @@ Bash program to setup development enviroment  for latest ubuntu.
 - Update and manage
   
 To-do:
-- Install pathogen (vim) A
-- Improve git and unzip installations (check if installed, confirm installation)
 - .bashrc aliases
-- Make install.sh consistent A
+- 
