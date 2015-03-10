@@ -17,7 +17,7 @@ do
     echo "*************"
     echo "Choose what to do:"
     echo "1. Install programs"
-    echo "2. Install configs"
+    echo "2. Install configs (not yes implemented)"
     echo "3. Install system updates"
     echo "4. Install and configure Vim"
     echo "5. Exit"
