@@ -9,4 +9,5 @@ Bash program to setup development enviroment  for latest ubuntu.
   
 To-do:
 - .bashrc aliases
+- Network address manager
 - 
