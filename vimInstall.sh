@@ -37,10 +37,6 @@ confVim(){
     cp .vimrc ~/
 
     #export TERM=xterm-256color
-
-    echo
-    echo "Vim configured"
-    echo
 }
 
 # function to install pathogen
