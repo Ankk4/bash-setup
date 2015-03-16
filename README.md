@@ -16,4 +16,4 @@ To-do:
 - bashrc aliases
 - Network address manager
 - Virtual machine setup(VMware tools)
-
+- VIM plugins folder structure wrong, correct example: .vim/bundles/auto-pairs/plugin/auto-pairs.vim
