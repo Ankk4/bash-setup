@@ -1,3 +1,4 @@
+execute pathogen#infect()
 " line numbers
 set nu
 

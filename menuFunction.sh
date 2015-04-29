@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# for time being, function files need to be called here to prevent errors
 source updateSystem.sh
 source install.sh
 source vimInstall.sh
